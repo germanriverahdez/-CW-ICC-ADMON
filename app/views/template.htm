@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Administrador de contenidos</title>
+    </head>
+    <body>
+        
+        <ul>
+        <repeat group="{{ @cont }}" value="{{ @item }}">                                       
+            <li><a href="admin/edit/{{ @item.id_contenido }}">{{@item['id_contenido']}}: {{@item['titulo']}}</a>  <a href="admin/vista/{{ @item.id_contenido }}">ver</a></li>                                       
+        </repeat>
+        </ul>
+        
+    </body>
+</html>
